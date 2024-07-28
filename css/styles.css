@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline:none;
+}
+
+h3{
+    margin: 10px;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serifs;
+    font-weight: lighter;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+body{
+    background: linear-gradient(-45deg,#FDF4F5,#BA90C6,#ee2f46);
+    background-size: 200% 200%;
+    animation: gradient alternate ;
+    height: 100vh;
+}
+
+@keyframes gradient{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.input-name,.input-date{
+    font-size: 14px;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display-events,.input-container{
+    display: grid;
+    grid-template-columns: 200px 120px 70px;
+    margin: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.add-btn{
+    background-color: green;
+    border: none;
+    height: 35px;
+    color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: red;
+    height: 25px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box-container{
+    padding: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+    margin: 2% 35%;
+    max-width: 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
